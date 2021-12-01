@@ -84,7 +84,5 @@ if __name__ == '__main__':
         zbx_image.login()
     except:
         pass
-
-    item_id = int(sys.argv[1])
-
+    item_id = 36652
     zbx_image.graph_get(item_id, zbx_ex_setting.zbx_graph_period, None, zbx_ex_setting.zbx_graph_width, zbx_ex_setting.zbx_graph_height)
